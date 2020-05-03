@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1588534335 source:c:\users\stojan\documents\github\programiranje-aktivnost\red_dead_redemption_projekat\main.cpp
+	<iostream>
+	"List.hpp"
+	"Dinstring.hpp"
+
+1588533215 c:\users\stojan\documents\github\programiranje-aktivnost\red_dead_redemption_projekat\list.hpp
+	<stdlib.h>
+	<iostream>
+
+1588532993 c:\users\stojan\documents\github\programiranje-aktivnost\red_dead_redemption_projekat\dinstring.hpp
+	<iostream>
+
