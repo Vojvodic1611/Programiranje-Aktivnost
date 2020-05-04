@@ -21,7 +21,7 @@ private:
         Damage = a;
         Accuracy = b;
         Range = 70;
-        Name =d;
+        Name = d;
     }
     Weapon(const Weapon &W){
         Damage = W.Damage;

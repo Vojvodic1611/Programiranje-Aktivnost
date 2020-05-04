@@ -2,6 +2,7 @@
 #define BUILDING_HPP_INCLUDED
 #include <iostream>
 #include "Dinstring.hpp"
+#include "NPC.hpp"
 #include "List.hpp"
 
 enum BuildingType {PUB = 1, HOTEL, STABLE, GENERAL_STORE};
@@ -14,12 +15,13 @@ private:
 public:
     Building(){
         BuildingType = PUB;
-        Name = "Birtija";
+        Name = "Random PUB";
         npc.add(1, NPC());
     }
     Building(BuildingType a, Dinstring b, List<NPC> c){
         BuildingType = a;
-
+        Name = b;
+        npc = c;
     }
 };
 

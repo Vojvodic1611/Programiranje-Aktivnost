@@ -1,8 +1,10 @@
 # depslib dependency file v1.0
-1588534335 source:c:\users\stojan\documents\github\programiranje-aktivnost\red_dead_redemption_projekat\main.cpp
+1588540438 source:c:\users\stojan\documents\github\programiranje-aktivnost\red_dead_redemption_projekat\main.cpp
 	<iostream>
 	"List.hpp"
 	"Dinstring.hpp"
+	"Dialogue.hpp"
+	"Interactions.hpp"
 
 1588533215 c:\users\stojan\documents\github\programiranje-aktivnost\red_dead_redemption_projekat\list.hpp
 	<stdlib.h>
@@ -10,4 +12,13 @@
 
 1588532993 c:\users\stojan\documents\github\programiranje-aktivnost\red_dead_redemption_projekat\dinstring.hpp
 	<iostream>
+
+1588540877 c:\users\stojan\documents\github\programiranje-aktivnost\red_dead_redemption_projekat\dialogue.hpp
+	<iostream>
+	"Dinstring.hpp"
+
+1588544035 c:\users\stojan\documents\github\programiranje-aktivnost\red_dead_redemption_projekat\interactions.hpp
+	<iostream>
+	"List.hpp"
+	"Dialogue.hpp"
 

@@ -32,14 +32,26 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="Actions.hpp" />
+		<Unit filename="Animal.hpp" />
+		<Unit filename="Being.hpp" />
 		<Unit filename="Building.hpp" />
+		<Unit filename="Camp.hpp" />
+		<Unit filename="Carriage.hpp" />
+		<Unit filename="Character.hpp" />
+		<Unit filename="Consumables.hpp" />
 		<Unit filename="Dialogue.hpp" />
 		<Unit filename="Dinstring.hpp" />
+		<Unit filename="Enviorment.hpp" />
 		<Unit filename="Horse.hpp" />
 		<Unit filename="Interactions.hpp" />
 		<Unit filename="List.hpp" />
 		<Unit filename="NPC.hpp" />
+		<Unit filename="Outfit.hpp" />
 		<Unit filename="Player.hpp" />
+		<Unit filename="Shop.hpp" />
+		<Unit filename="Tent.hpp" />
+		<Unit filename="Town.hpp" />
 		<Unit filename="Weapon.hpp" />
 		<Unit filename="main.cpp" />
 		<Extensions>
