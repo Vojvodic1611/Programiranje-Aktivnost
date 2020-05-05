@@ -17,6 +17,7 @@ public:
         legendary = b;
     }
 
+
 };
 
 

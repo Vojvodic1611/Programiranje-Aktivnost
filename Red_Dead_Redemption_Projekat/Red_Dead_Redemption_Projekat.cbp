@@ -43,13 +43,16 @@
 		<Unit filename="Dialogue.hpp" />
 		<Unit filename="Dinstring.hpp" />
 		<Unit filename="Enviorment.hpp" />
+		<Unit filename="Game.hpp" />
 		<Unit filename="Horse.hpp" />
 		<Unit filename="Interactions.hpp" />
 		<Unit filename="List.hpp" />
+		<Unit filename="Mission.hpp" />
 		<Unit filename="NPC.hpp" />
 		<Unit filename="Outfit.hpp" />
 		<Unit filename="Player.hpp" />
 		<Unit filename="Shop.hpp" />
+		<Unit filename="Story.hpp" />
 		<Unit filename="Tent.hpp" />
 		<Unit filename="Town.hpp" />
 		<Unit filename="Weapon.hpp" />

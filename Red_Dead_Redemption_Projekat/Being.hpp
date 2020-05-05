@@ -25,6 +25,11 @@ public:
         stamina = B.stamina;
         consumables = B.consumables;
     }
+    void kill(){
+        hp = 0;
+        stamina = 0;
+        ~Being();
+    }
 };
 
 #endif // BEING_HPP_INCLUDED

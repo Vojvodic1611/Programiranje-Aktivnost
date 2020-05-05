@@ -28,6 +28,12 @@ public:
         consumables = C;
         interactions = I;
     }
+    void sell_weapon(int n;){
+        weapons.remove(n);
+    }
+    void sell_consumable(int n;){
+        consumables.remove(n);
+    }
 
 };
 

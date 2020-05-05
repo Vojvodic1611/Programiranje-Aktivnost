@@ -19,6 +19,10 @@ public:
         interactions = I;
         weapons = W;
     }
+    void pet_horse(){
+        hp += 10;
+        stamina += 10;
+    }
 
 };
 
