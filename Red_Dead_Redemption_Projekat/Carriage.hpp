@@ -12,11 +12,23 @@ private:
 public:
     Carriage(){
         horses.add(1, Horse());
-        consumables(1, Consumables());
-        consumables(2, Consumables());
+        consumables.add(1, Consumables());
+        consumables.add(2, Consumables());
     }
     Carriage(List <Horse> H, List <Consumables> C){
         horses = H;
+        consumables = C;
+    }
+    List <Horse> getCarriageHorses()const{
+        return horses;
+    }
+    List <Consumables> getCarriageConsumables()const{
+        return consumables;
+    }
+    void setCarriageHorses(const List <Horse> H){
+        horses = H;
+    }
+    void setCarriageConsumables(const List <Consumables> C){
         consumables = C;
     }
 };

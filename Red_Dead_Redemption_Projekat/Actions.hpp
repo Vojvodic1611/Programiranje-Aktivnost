@@ -16,6 +16,18 @@ public:
         desc = a;
         rep_points = b;
     }
+    int getRepPoints()const{
+        return rep_points;
+    }
+    DinString getDesc()const{
+        return desc;
+    }
+    void setRepPoints(const int R){
+        rep_points = R;
+    }
+    void setDesc(const DinString d){
+        desc = d;
+    }
 };
 
 #endif // ACTIONS_HPP_INCLUDED

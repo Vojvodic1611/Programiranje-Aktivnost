@@ -31,10 +31,34 @@ public:
         npcs.add(5, NPC());
         npcs.add(6, NPC());
     }
-    Town(Dinstring a, List <Building> B, List <Shop> S, List <NPC> N){
+    Town(DinString a, List <Building> B, List <Shop> S, List <NPC> N){
         Name = a;
         buildings = B;
         shops = S;
+        npcs = N;
+    }
+    DinString getTownName()const{
+        return Name;
+    }
+    List <Building> getTownBuilding()const{
+        return buildings;
+    }
+    List <Shop> getTownShops()const{
+        return shops;
+    }
+    List <NPC> getTownNPCS()const{
+        return npcs;
+    }
+    void setTownName(const DinString N){
+        Name = N;
+    }
+    void setTownBuildings(const List <Building> B){
+        buildings = B;
+    }
+    void setTownShops(const List <Shop> S){
+        shops = S;
+    }
+    void setTownNPCs(const List <NPC> N){
         npcs = N;
     }
 };

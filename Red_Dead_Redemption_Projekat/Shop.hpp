@@ -20,21 +20,38 @@ public:
         consumables.add(1, Consumables());
         consumables.add(1, Consumables());
         consumables.add(1, Consumables());
-        interactions.add(1, Interactions(CUSTOM, "Let me buy this from you mister!"));
-        interactions.add(2, Interactions(ROBBERY, "You are being robbed feller!"));
+        interactions.add(1, Interactions());
+        interactions.add(2, Interactions());
     }
-    Shop(List <weapons> W, List <Consumables> C, List <interactions> I) : Building(a, b, c){
+    Shop(List <Weapon> W, List <Consumables> C, List <Interactions> I, BuildingType a, DinString b, List <NPC> c) : Building(a, b, c){
         weapons = W;
         consumables = C;
         interactions = I;
     }
-    void sell_weapon(int n;){
+    void sell_weapon(int n){
         weapons.remove(n);
     }
-    void sell_consumable(int n;){
+    void sell_consumable(int n){
         consumables.remove(n);
     }
-
+    List <Weapon> getShopWeapons()const{
+        return weapons;
+    }
+    List <Consumables> getShopConsumables()const{
+        return consumables;
+    }
+    List <Interactions> getShopInteractions()const{
+        return interactions;
+    }
+    void setShopWeapons(const List <Weapon> W){
+        weapons = W;
+    }
+    void setShopConsumables(const List <Consumables> C){
+        consumables = C;
+    }
+    void setShopInteractions(const List <Interactions> I){
+        interactions = I;
+    }
 };
 
 #endif // SHOP_HPP_INCLUDED

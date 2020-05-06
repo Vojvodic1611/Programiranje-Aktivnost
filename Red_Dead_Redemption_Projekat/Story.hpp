@@ -23,6 +23,30 @@ public:
         xp_reward = x;
         misije = M;
     }
+    int getStoryProgress()const{
+        return progress;
+    }
+    int getStoryChapter()const{
+        return chapter;
+    }
+    int getStoryXP()const{
+        return xp_reward;
+    }
+    List <Mission> getStoryMissions()const{
+        return misije;
+    }
+    void setStoryProgress(const int P){
+        progress = P;
+    }
+    void setStoryChapter(const int C){
+        chapter = C;
+    }
+    void setStroyXP(const int X){
+        xp_reward = X;
+    }
+    void setStoryMission(const List <Mission> M){
+        misije = M;
+    }
 };
 
 #endif // STORY_HPP_INCLUDED

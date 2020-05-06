@@ -16,6 +16,9 @@ public:
     Dialogue(Dialogue &D){
         dialogue = D.dialogue;
     }
+    DinString getDialogue()const{
+        return dialogue;
+    }
 
 };
 

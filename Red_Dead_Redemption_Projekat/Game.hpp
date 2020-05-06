@@ -34,15 +34,43 @@ public:
         story = Story();
     }
 
-    Game(Player p, List <Towns> T, List <NPC> N, List <Camp> C, List <Enviorment> E, List <Carriage> C1, Story s){
+    Game(Player p, List <Town> T, List <NPC> N, List <Camp> C, List <Enviorment> E, List <Carriage> C1, Story s){
         player = p;
         towns = T;
         npcs = N;
         camps = C;
         enviorments = E;
         carriages = C1;
-        story = S;
+        story = s;
     }
+
+    List <Town> getGameTowns()const{
+        return towns;
+    }
+    List <NPC> getGameNPCs()const{
+        return npcs;
+    }
+    List <Camp> getGameCamps()const{
+        return camps;
+    }
+    List <Carriage> getGameCarriages()const{
+        return carriages;
+    }
+
+    void setGameTowns(const List <Town> T){
+        towns = T;
+    }
+    void setGameNPCs(const List <NPC> N){
+        npcs = N;
+    }
+    void setGameCamps(const List <Camp> C){
+        camps = C;
+    }
+    void setGameCarriages(const List <Carriage> c){
+        carriages = c;
+    }
+
 };
+
 
 #endif // GAME_HPP_INCLUDED

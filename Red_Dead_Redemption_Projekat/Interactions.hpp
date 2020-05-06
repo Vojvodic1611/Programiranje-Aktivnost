@@ -9,20 +9,26 @@ enum InteractionType{GREETING = 1, ANTAGONIZATION, ROBBERY, CUSTOM};
 class Interactions{
 private:
     InteractionType type;
-    List<Dialogue> Possible_Dialogue;
+    Dialogue Possible_Dialogue;
 public:
     Interactions(){
         type = GREETING;
         Dialogue HELP("Hey there mister!");
-        Possible_Dialogue.add(1, HELP);
+
     }
-    Interactions(InteractionType a, List<Dialogue> b){
+    Interactions(InteractionType a, Dialogue b){
         type = a;
         Possible_Dialogue = b;
     }
     Interactions(Interactions &I){
         type = I.type;
         Possible_Dialogue = I.Possible_Dialogue;
+    }
+    InteractionType getInteractionType()const{
+        return type;
+    }
+    void setInteractionType(const InteractionType I){
+        type = I;
     }
 };
 

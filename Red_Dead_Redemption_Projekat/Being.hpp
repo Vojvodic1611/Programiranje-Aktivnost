@@ -1,15 +1,18 @@
 #include <iostream>
-#include "Consumables.hpp"
-#include "List.hpp"
 #ifndef BEING_HPP_INCLUDED
 #define BEING_HPP_INCLUDED
+#include "Consumables.hpp"
+#include "List.hpp"
 
 class Being{
-private:
+protected:
     int hp;
     int stamina;
     List <Consumables> consumables;
 public:
+    ~Being(){
+
+    }
     Being(){
         hp = 100;
         stamina = 100;
@@ -28,8 +31,26 @@ public:
     void kill(){
         hp = 0;
         stamina = 0;
-        ~Being();
     }
+    int getHP()const{
+        return hp;
+    }
+    int getST()const{
+        return stamina;
+    }
+    List <Consumables> getListConsumables()const{
+        return consumables;
+    }
+    void setHP(const int H){
+        hp = H;
+    }
+    void setST(const int S){
+        stamina = S;
+    }
+    void setConsumables(const List <Consumables> C){
+        consumables = C;
+    }
+
 };
 
 #endif // BEING_HPP_INCLUDED

@@ -16,8 +16,20 @@ public:
         tents.add(2, Tent());
         tents.add(3, Tent());
     }
-    Camp(Dinstring name1, List <Tent> T){
+    Camp(DinString name1, List <Tent> T){
         LocationName = name1;
+        tents = T;
+    }
+    DinString getCampLocationName()const{
+        return LocationName;
+    }
+    List <Tent> getCampTents()const{
+        return tents;
+    }
+    void setCampLocationName(const DinString N){
+        LocationName = N;
+    }
+    void setCampTents(const List <Tent> T){
         tents = T;
     }
 };

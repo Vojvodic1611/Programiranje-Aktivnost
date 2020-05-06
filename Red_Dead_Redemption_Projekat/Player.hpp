@@ -16,8 +16,7 @@ public:
         LvL = 0;
         smelly = false;
         actions.add(1, Action());
-    }
-    Player(int a, bool b, List <Action> A) : Character( k, l , D, W, C){
+    }    Player(int a, bool b, List <Action> A, List <Dialogue> k, List <Weapon> l, List <Outfit> D, int p, int q, List <Consumables> C) : Character( k, l , D, p ,q , C ){
         LvL = a;
         smelly = b;
         actions = A;
@@ -44,6 +43,31 @@ public:
     void Buy_Weapon(Weapon W){
         int a = weapons.size();
         weapons.add(a + 1, W);
+    }
+
+    int getPlayerLVL()const{
+        return LvL;
+    }
+    int getPlayerRep()const{
+        return reputation;
+    }
+    List <Action> getPlayerActions(){
+        return actions;
+    }
+    bool getPlayerSmelly()const{
+        return smelly;
+    }
+    void setPlayerLvL(const int L){
+        LvL = L;
+    }
+    void setPlayerRep(const int R){
+        reputation = R;
+    }
+    void setPlayerActions(const List <Action> A){
+        actions = A;
+    }
+    void setPlayerSmelly(const bool S){
+        smelly = S;
     }
 
 };

@@ -2,19 +2,19 @@
 <CodeBlocks_layout_file>
 	<FileVersion major="1" minor="0" />
 	<ActiveTarget name="Debug" />
-	<File name="Interactions.hpp" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="4" zoom_2="0">
+	<File name="Horse.hpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="3" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="40" topLine="0" />
+			<Cursor1 position="1145" topLine="11" />
 		</Cursor>
 	</File>
-	<File name="Animal.hpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="Game.hpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="3" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="369" topLine="0" />
+			<Cursor1 position="1192" topLine="44" />
 		</Cursor>
 	</File>
-	<File name="Player.hpp" open="0" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="Enviorment.hpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="1250" topLine="10" />
+			<Cursor1 position="742" topLine="0" />
 		</Cursor>
 	</File>
 	<File name="Dinstring.hpp" open="0" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
@@ -22,39 +22,34 @@
 			<Cursor1 position="3343" topLine="118" />
 		</Cursor>
 	</File>
-	<File name="Building.hpp" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="Outfit.hpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="553" topLine="0" />
+			<Cursor1 position="667" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="Character.hpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="2" zoom_2="0">
+	<File name="Story.hpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="811" topLine="0" />
+			<Cursor1 position="1061" topLine="11" />
 		</Cursor>
 	</File>
-	<File name="Being.hpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="Town.hpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="648" topLine="0" />
+			<Cursor1 position="1557" topLine="25" />
 		</Cursor>
 	</File>
-	<File name="Weapon.hpp" open="0" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="-1" zoom_2="0">
+	<File name="Dialogue.hpp" open="0" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="2" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="479" topLine="0" />
+			<Cursor1 position="434" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="Horse.hpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="Weapon.hpp" open="1" top="1" tabpos="1" split="0" active="1" splitpos="0" zoom_1="-1" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="972" topLine="0" />
+			<Cursor1 position="784" topLine="27" />
 		</Cursor>
 	</File>
-	<File name="Shop.hpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="Mission.hpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="1109" topLine="2" />
-		</Cursor>
-	</File>
-	<File name="Camp.hpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="481" topLine="0" />
+			<Cursor1 position="1044" topLine="5" />
 		</Cursor>
 	</File>
 	<File name="List.hpp" open="0" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
@@ -62,19 +57,69 @@
 			<Cursor1 position="133" topLine="10" />
 		</Cursor>
 	</File>
-	<File name="Dialogue.hpp" open="0" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="2" zoom_2="0">
+	<File name="Being.hpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="4" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="291" topLine="0" />
+			<Cursor1 position="1047" topLine="23" />
+		</Cursor>
+	</File>
+	<File name="Building.hpp" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="2" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="953" topLine="9" />
+		</Cursor>
+	</File>
+	<File name="Camp.hpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="5" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="785" topLine="6" />
 		</Cursor>
 	</File>
 	<File name="main.cpp" open="0" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="187" topLine="0" />
+			<Cursor1 position="603" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="NPC.hpp" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="1" zoom_2="0">
+	<File name="Carriage.hpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="3" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="19" topLine="0" />
+			<Cursor1 position="838" topLine="1" />
+		</Cursor>
+	</File>
+	<File name="Actions.hpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="548" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="Shop.hpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="3" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1298" topLine="22" />
+		</Cursor>
+	</File>
+	<File name="Character.hpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="2" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1363" topLine="16" />
+		</Cursor>
+	</File>
+	<File name="Consumables.hpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="6" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="830" topLine="17" />
+		</Cursor>
+	</File>
+	<File name="Interactions.hpp" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="1" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="786" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="Animal.hpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="664" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="Player.hpp" open="0" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1603" topLine="33" />
+		</Cursor>
+	</File>
+	<File name="NPC.hpp" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="3" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="986" topLine="2" />
 		</Cursor>
 	</File>
 </CodeBlocks_layout_file>

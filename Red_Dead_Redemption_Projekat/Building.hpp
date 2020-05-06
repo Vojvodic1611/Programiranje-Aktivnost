@@ -14,14 +14,32 @@ private:
     List <NPC> npc;
 public:
     Building(){
-        BuildingType = PUB;
+        type = PUB;
         Name = "Random PUB";
         npc.add(1, NPC());
     }
-    Building(BuildingType a, Dinstring b, List<NPC> c){
-        BuildingType = a;
+    Building(BuildingType a, DinString b, List<NPC> c){
+        type = a;
         Name = b;
         npc = c;
+    }
+    BuildingType getBuildingType()const{
+        return type;
+    }
+    DinString getBUildingName()const{
+        return Name;
+    }
+    List <NPC> getBuildingNPC()const{
+        return npc;
+    }
+    void setBuildingType(const BuildingType T){
+        type = T;
+    }
+    void setBuildingName(const DinString n){
+        Name = n;
+    }
+    void setBuildingNPC(const List <NPC> N){
+        npc =N;
     }
 };
 

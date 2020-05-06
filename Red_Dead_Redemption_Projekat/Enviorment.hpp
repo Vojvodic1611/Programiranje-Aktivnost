@@ -18,6 +18,18 @@ public:
         temperature = t;
         animals = A;
     }
+    int getTemperature()const{
+        return temperature;
+    }
+    List <Animal> getEnviormentAnimals()const{
+        return animals;
+    }
+    void setTemperature(const int T){
+        temperature = T;
+    }
+    void setEnviormentAnimals(const List <Animal> A){
+        animals = A;
+    }
 };
 
 #endif // ENVIORMENT_HPP_INCLUDED

@@ -12,13 +12,25 @@ private:
 public:
     NPC() : Character(){
         Name = "Goran Krkut";
-        interactions.add(1, Interactions(GREETING, "Howdy feller!"));
-        interactions.add(2, Interactions(ANTAGONIZATION, "You are a scumbag!"));
-        interactions.add(3, Interactions(ROBBERY, "You are being robbed!"));
+        interactions.add(1, Interactions());
+        interactions.add(2, Interactions());
+        interactions.add(3, Interactions());
     }
-    NPC(DinString a, List <Interactions> b) : Character( k, l , D, W, C){
+    NPC(DinString a, List <Interactions> b, List <Dialogue> k, List <Weapon> l, List <Outfit> D, int W, int C, List <Consumables> J) : Character( k, l , D, W, C, J){
         Name = a;
         interactions = b;
+    }
+    DinString getNPCName()const{
+        return Name;
+    }
+    List <Interactions> getNPCInteractions()const{
+        return interactions;
+    }
+    void setNPCName(const DinString N){
+        Name = N;
+    }
+    void setNPCInteractions(const List <Interactions> I){
+        interactions = I;
     }
 
 };

@@ -23,6 +23,24 @@ public:
         weapon_reward = W;
         consumable_reward = C;
     }
+    List <NPC> getMissionNPCs()const{
+        return npcs;
+    }
+    List <Weapon> getMissionWeapons()const{
+        return weapon_reward;
+    }
+    List <Consumables> getMissionConsumables()const{
+        return consumable_reward;
+    }
+    void setMissionNPCs(const List <NPC> N){
+        npcs =  N;
+    }
+    void setMissionWeapons(const List <Weapon> W){
+        weapon_reward = W;
+    }
+    void setMissionConsumables(const List <Consumables> C){
+        consumable_reward = C;
+    }
 };
 
 #endif // MISSION_HPP_INCLUDED

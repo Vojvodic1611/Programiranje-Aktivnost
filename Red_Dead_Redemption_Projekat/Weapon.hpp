@@ -5,29 +5,63 @@
 #include "List.hpp"
 
 class Weapon{
-public:
+private:
     int Damage;
     int Accuracy;
     int Range;
+    int Ammo;
     DinString Name;
-private:
+public:
     Weapon(){
         Damage = 70;
         Accuracy = 60;
         Range = 70;
+        Ammo = 30;
         Name = "Revolver";
     }
-    Weapon(int a, int b, int c, DinString d){
+    Weapon(int a, int b, int c, DinString d, int k){
         Damage = a;
         Accuracy = b;
         Range = 70;
         Name = d;
+        Ammo = k;
     }
     Weapon(const Weapon &W){
         Damage = W.Damage;
         Accuracy = W.Accuracy;
-        Rang = W.Range;
-        Name = W.Name
+        Range = W.Range;
+        Name = W.Name;
+        Ammo = W.Ammo;
+    }
+    int getWeaponDamage()const{
+        return Damage;
+    }
+    int getWeaponAccuracy()const{
+        return Accuracy;
+    }
+    int getWeaponRange()const{
+        return Range;
+    }
+    int getWeaponAmmo()const{
+        return Ammo;
+    }
+    DinString getWeaponName()const{
+        return Name;
+    }
+    void setWeaponDamage(const int D){
+        Damage = D;
+    }
+    void setWeaponAccuracy(const int A){
+        Accuracy = A;
+    }
+    void setWeaponRange(const int R){
+        Range = R;
+    }
+    void setWeaponAmmo(const int Am){
+        Ammo = Am;
+    }
+    void setWeaponName(const DinString N){
+        Name = N;
     }
 };
 

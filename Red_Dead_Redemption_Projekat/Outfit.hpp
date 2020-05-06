@@ -18,6 +18,18 @@ public:
         type = a;
         name = b;
     }
+    outfitPart getOutfitType()const{
+        return type;
+    }
+    DinString getOutfitName()const{
+        return name;
+    }
+    void setOutfitType(const outfitPart O){
+        type = O;
+    }
+    void setOutfitName(const DinString N){
+        name = N;
+    }
 };
 
 #endif // OUTFIT_HPP_INCLUDED

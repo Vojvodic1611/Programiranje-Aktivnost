@@ -12,12 +12,22 @@ public:
         aggresive = false;
         legendary =  false;
     }
-    Animal(bool a, bool b) : Being(p, q, R){
+    Animal(bool a, bool b, int p, int q, List <Consumables> R) : Being(p, q, R){
         aggresive = a;
         legendary = b;
     }
-
-
+    bool getAggresive()const{
+        return aggresive;
+    }
+    bool getLegendary()const{
+        return legendary;
+    }
+    void setLegendary(const bool L){
+        legendary = L;
+    }
+    void setAggresive(const bool A){
+        aggresive = A;
+    }
 };
 
 
