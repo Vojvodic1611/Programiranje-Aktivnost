@@ -63,6 +63,9 @@ public:
     void setWeaponName(const DinString N){
         Name = N;
     }
+    void SHOOT(){
+        Ammo -= 1;
+    }
 };
 
 #endif // WEAPON_HPP_INCLUDED

@@ -28,6 +28,11 @@ public:
     void setDesc(const DinString d){
         desc = d;
     }
+    friend ostream& operator <<(ostream&out, Action& A){
+        out << "Action description : " << A.getDesc() << endl;
+        out << "Action reputation points : " << A.getRepPoints() << endl;
+        return out;
+    }
 };
 
 #endif // ACTIONS_HPP_INCLUDED

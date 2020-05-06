@@ -10,8 +10,8 @@ protected:
     int stamina;
     List <Consumables> consumables;
 public:
-    ~Being(){
-
+    void operator~(){
+        ~Being();
     }
     Being(){
         hp = 100;
@@ -28,9 +28,11 @@ public:
         stamina = B.stamina;
         consumables = B.consumables;
     }
+
     void kill(){
         hp = 0;
         stamina = 0;
+        ~Being();
     }
     int getHP()const{
         return hp;
@@ -49,6 +51,9 @@ public:
     }
     void setConsumables(const List <Consumables> C){
         consumables = C;
+    }
+    void Loot(){
+        consumables.empty();
     }
 
 };

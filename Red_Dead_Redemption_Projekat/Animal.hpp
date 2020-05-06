@@ -8,6 +8,9 @@ private:
     bool aggresive;
     bool legendary;
 public:
+    void operator~(){
+        ~Animal();
+    }
     Animal() : Being(){
         aggresive = false;
         legendary =  false;
@@ -28,6 +31,12 @@ public:
     void setAggresive(const bool A){
         aggresive = A;
     }
+    void kill_Animal(){
+        hp = 0;
+        stamina = 0;
+        ~Animal();
+    }
+
 };
 
 
