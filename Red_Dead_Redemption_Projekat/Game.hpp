@@ -156,6 +156,7 @@ public:
         G.writeGameEnviorments();
         G.writeGameNPCs();
         G.writeGameTowns();
+        out << G.story << endl;
         return out;
     }
 };

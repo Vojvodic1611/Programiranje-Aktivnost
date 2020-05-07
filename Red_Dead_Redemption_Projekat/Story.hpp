@@ -47,6 +47,25 @@ public:
     void setStoryMission(const List <Mission> M){
         misije = M;
     }
+    void writeStoryMission(){
+        if(misije.size() == 0){
+            cout << "There are no missions!" << endl;
+        }
+        else{
+            int i;
+            Mission M;
+            for(i = 1; i <= misije.size(); ++i){
+                misije.read(i, M);
+                cout << M << endl;
+            }
+        }
+    }
+    friend ostream& operator << (ostream&out, Story &S){
+        out << "Story progress : " << S.getStoryProgress() << endl;
+        out << "Story chapter : " << S.getStoryChapter() << endl;
+        out << "Story CP : " << S.getStoryXP() << endl;
+        return out;
+    }
 };
 
 #endif // STORY_HPP_INCLUDED
