@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1588801020 source:c:\users\stojan\documents\github\programiranje-aktivnost\red_dead_redemption_projekat\main.cpp
+1588861178 source:c:\users\stojan\documents\github\programiranje-aktivnost\red_dead_redemption_projekat\main.cpp
 	<iostream>
 	"List.hpp"
 	"Actions.hpp"
@@ -37,7 +37,7 @@
 1588532993 c:\users\stojan\documents\github\programiranje-aktivnost\red_dead_redemption_projekat\dinstring.hpp
 	<iostream>
 
-1588794283 c:\users\stojan\documents\github\programiranje-aktivnost\red_dead_redemption_projekat\dialogue.hpp
+1588862244 c:\users\stojan\documents\github\programiranje-aktivnost\red_dead_redemption_projekat\dialogue.hpp
 	<iostream>
 	"Dinstring.hpp"
 
@@ -46,14 +46,14 @@
 	"List.hpp"
 	"Dialogue.hpp"
 
-1588801896 c:\users\stojan\documents\github\programiranje-aktivnost\red_dead_redemption_projekat\actions.hpp
+1588860823 c:\users\stojan\documents\github\programiranje-aktivnost\red_dead_redemption_projekat\actions.hpp
 	<iostream>
 	"Dinstring.hpp"
 
 1588798160 c:\users\stojan\documents\github\programiranje-aktivnost\red_dead_redemption_projekat\animal.hpp
 	"Character.hpp"
 
-1588794014 c:\users\stojan\documents\github\programiranje-aktivnost\red_dead_redemption_projekat\character.hpp
+1588862924 c:\users\stojan\documents\github\programiranje-aktivnost\red_dead_redemption_projekat\character.hpp
 	<iostream>
 	"Dialogue.hpp"
 	"Weapon.hpp"
@@ -62,12 +62,12 @@
 	"Consumables.hpp"
 	"Being.hpp"
 
-1588797503 c:\users\stojan\documents\github\programiranje-aktivnost\red_dead_redemption_projekat\weapon.hpp
+1588861534 c:\users\stojan\documents\github\programiranje-aktivnost\red_dead_redemption_projekat\weapon.hpp
 	<iostream>
 	"Dinstring.hpp"
 	"List.hpp"
 
-1588795610 c:\users\stojan\documents\github\programiranje-aktivnost\red_dead_redemption_projekat\outfit.hpp
+1588862274 c:\users\stojan\documents\github\programiranje-aktivnost\red_dead_redemption_projekat\outfit.hpp
 	<iostream>
 	"Dinstring.hpp"
 
@@ -131,7 +131,7 @@
 	"NPC.hpp"
 	"Carriage.hpp"
 
-1588801733 c:\users\stojan\documents\github\programiranje-aktivnost\red_dead_redemption_projekat\player.hpp
+1588863058 c:\users\stojan\documents\github\programiranje-aktivnost\red_dead_redemption_projekat\player.hpp
 	<iostream>
 	"List.hpp"
 	"Actions.hpp"

@@ -61,6 +61,52 @@ public:
     void setTownNPCs(const List <NPC> N){
         npcs = N;
     }
+    void writeTownNPCs(){
+        if(npcs.size() == 0){
+            cout << "There are no NPCs in this town!" << endl;
+        }
+        else{
+            int i;
+            NPC N;
+            for(i = 1; i <= npcs.size(); ++i){
+                npcs.read(i, N);
+                cout << N << endl;
+            }
+        }
+    }
+    void writeTownBuildings(){
+        if(buildings.size() == 0){
+            cout << "There are no Buildings in this town!" << endl;
+        }
+        else{
+            int i;
+            Building B;
+            for(i = 1; i <= buildings.size(); ++i){
+                buildings.read(i, B);
+                cout << B << endl;
+            }
+        }
+    }
+    void writeTownShops(){
+        if(shops.size() == 0){
+            cout << "There are no shops in this town!" << endl;
+        }
+        else{
+            int i;
+            Shop S;
+            for(i = 1; i <= shops.size(); ++i){
+                shops.read(i, S);
+                cout << S << endl;
+            }
+        }
+    }
+    friend ostream& operator << (ostream&out, Town &T){
+        T.writeTownNPCs();
+        T.writeTownBuildings();
+        T.writeTownShops();
+        return out;
+    }
+
 };
 
 #endif // TOWN_HPP_INCLUDED

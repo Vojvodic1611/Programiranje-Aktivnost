@@ -41,6 +41,37 @@ public:
     void setHorseWeapons(const List <Weapon> W){
         weapons = W;
     }
+    void writeHorseWeapons(){
+        if(weapons.size() == 0){
+            cout << "Horse has no weapons!" << endl;
+        }
+        else{
+            Weapon W;
+            int i;
+            for (i = 1; i <= weapons.size(); ++i){
+                weapons.read(i, W);
+                cout << W << endl;
+            }
+        }
+    }
+    void writeHorseInteractions(){
+        if(interactions.size() == 0){
+            cout << "Horse has no interactions!" << endl;
+        }
+        else{
+            Interactions I;
+            int i;
+            for (i = 1; i <= interactions.size(); ++i){
+                interactions.read(i, I);
+                cout << I << endl;
+            }
+        }
+    }
+    friend ostream& operator << (ostream&out, Horse &H){
+        H.writeHorseWeapons();
+        H.writeHorseInteractions();
+        return out;
+    }
 
 };
 

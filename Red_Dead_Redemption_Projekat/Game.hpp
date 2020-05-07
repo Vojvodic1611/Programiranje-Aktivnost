@@ -69,7 +69,95 @@ public:
     void setGameCarriages(const List <Carriage> c){
         carriages = c;
     }
-
+    void writeGameTowns(){
+        if(towns.size() == 0){
+            cout << "There are no Towns in the game." << endl;
+        }
+        else{
+            cout << "Towns in the game : " << endl;
+            cout << "---------------------" << endl;
+            int i;
+            Town T;
+            for(i = 0; i <= towns.size(); ++i){
+                towns.read(i, T);
+                cout << "Town : " << T << endl;
+            }
+            cout << "---------------------" << endl;
+        }
+    }
+    void writeGameNPCs(){
+        if(npcs.size() == 0){
+            cout << "There are no NPCs in the game." << endl;
+        }
+        else{
+            cout << "NPCs in the game : " << endl;
+            cout << "---------------------" << endl;
+            int i;
+            NPC N;
+            for(i = 0; i <= npcs.size(); ++i){
+                npcs.read(i, N);
+                cout << "NPC : " << N << endl;
+            }
+            cout << "---------------------" << endl;
+        }
+    }
+    void writeGameCamps(){
+        if(camps.size() == 0){
+            cout << "There are no camps in the game." << endl;
+        }
+        else{
+            cout << "Camps in the game : " << endl;
+            cout << "---------------------" << endl;
+            int i;
+            Camp C;
+            for(i = 0; i <= camps.size(); ++i){
+                camps.read(i, C);
+                cout << "Camp : " << C << endl;
+            }
+            cout << "---------------------" << endl;
+        }
+    }
+    void writeGameEnviorments(){
+        if(enviorments.size() == 0){
+            cout << "There are no enviorments in the game." << endl;
+        }
+        else{
+            cout << "Enviorments in the game : " << endl;
+            cout << "---------------------" << endl;
+            int i;
+            Enviorment E;
+            for(i = 0; i <= enviorments.size(); ++i){
+                enviorments.read(i, E);
+                cout << "Enviorment : " << E << endl;
+            }
+            cout << "---------------------" << endl;
+        }
+    }
+    void writeGameCarriages(){
+        if(carriages.size() == 0){
+            cout << "There are no carriages in the game." << endl;
+        }
+        else{
+            cout << "Carriages in the game : " << endl;
+            cout << "---------------------" << endl;
+            int i;
+            Carriage C;
+            for(i = 0; i <= carriages.size(); ++i){
+                carriages.read(i, C);
+                cout << "Carriages : " << C << endl;
+            }
+            cout << "---------------------" << endl;
+        }
+    }
+    friend ostream& operator << (ostream&out, Game &G){
+        out << G.player << endl;
+        G.writeGameCamps();
+        G.writeGameCarriages();
+        G.writeGameEnviorments();
+        G.writeGameNPCs();
+        G.writeGameTowns();
+        return out;
+    }
 };
 
 

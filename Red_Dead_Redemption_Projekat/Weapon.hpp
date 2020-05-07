@@ -66,6 +66,15 @@ public:
     void SHOOT(){
         Ammo -= 1;
     }
+
+    friend ostream& operator <<(ostream&out, Weapon& w){
+        out << "Weapon Damage = "<< w.getWeaponDamage()<< endl;
+        out << "Weapon Accuracy = "<< w.getWeaponAccuracy()<< endl;
+        out << "Weapon Range = "<< w.getWeaponRange()<< endl;
+        out << "Weapon Ammo = "<< w.getWeaponAmmo()<< endl;
+        out << "Weapon Name = "<< w.getWeaponName()<< endl;
+        return out;
+    }
 };
 
 #endif // WEAPON_HPP_INCLUDED

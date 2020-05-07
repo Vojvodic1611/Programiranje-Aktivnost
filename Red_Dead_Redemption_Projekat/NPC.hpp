@@ -32,6 +32,33 @@ public:
     void setNPCInteractions(const List <Interactions> I){
         interactions = I;
     }
+    void writeNPCInteractions(){
+        if(interactions.size() == 0){
+            cout << "No interactions!" << endl;
+        }
+        else{
+            int i;
+            Interactions I;
+            for (i = 1; i <= interactions.size(); ++i){
+                interactions.read(1, I);
+                cout<< I << endl;
+            }
+        }
+    }
+
+    friend ostream& operator <<(ostream&out, NPC& N){
+        out << "NPC : " << endl;
+        out << "-----------" << endl;
+        out << "NPC name = "<< N.getNPCName()<< endl;
+        N.writeNPCInteractions();
+        N.writeCharacterWeapons();
+        N.writeCharacterDialogue();
+        N.writeCharacterOutfit();
+        out << "-----------" << endl;
+        out << "-----------" << endl;
+        out <<endl;
+        return out;
+    }
 
 };
 

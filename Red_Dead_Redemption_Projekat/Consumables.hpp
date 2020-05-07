@@ -38,6 +38,12 @@ public:
     void setConsumableName(const DinString n){
         Name = n;
     }
+    friend ostream& operator << (ostream&out, Consumables &C){
+        out << "Name of consumable : " << C.getConsumableName() << endl;
+        out << "HP regen of consumable : " << C.getHPregen() << endl;
+        out << "Stamina regen of consumable : " << C.getSTregen() << endl;
+        return out;
+    }
 };
 
 #endif // CONSUMABLES_HPP_INCLUDED

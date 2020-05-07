@@ -26,7 +26,7 @@ public:
     BuildingType getBuildingType()const{
         return type;
     }
-    DinString getBUildingName()const{
+    DinString getBuildingName()const{
         return Name;
     }
     List <NPC> getBuildingNPC()const{
@@ -40,6 +40,26 @@ public:
     }
     void setBuildingNPC(const List <NPC> N){
         npc =N;
+    }
+    void writeBuildingNPCs(){
+        if(npc.size() == 0){
+            cout << "There are no NPCs in this building!" << endl;
+        }
+        else{
+            int i;
+            NPC N;
+            for(i = 1; i <= npc.size(); ++i){
+                npc.read(i, N);
+                cout << N << endl;
+            }
+        }
+    }
+    friend ostream& operator << (ostream&out, Building &B){
+        out << "Buidling type : " << B.getBuildingType() << endl;
+        out << "Buidling name : " << B.getBuildingName() << endl;
+        B.writeBuildingNPCs();
+
+        return out;
     }
 };
 

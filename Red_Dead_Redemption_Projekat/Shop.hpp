@@ -52,6 +52,65 @@ public:
     void setShopInteractions(const List <Interactions> I){
         interactions = I;
     }
+    void writeShopInteractions(){
+        if(interactions.size() == 0){
+            cout << "No interactions!" << endl;
+        }
+        else{
+            int i;
+            Interactions I;
+            for (i = 1; i <= interactions.size(); ++i){
+                interactions.read(1, I);
+                cout<< I << endl;
+            }
+        }
+    }
+    void writeShopWeapons(){
+        if(weapons.size() == 0){
+            cout << "No weapons!" << endl;
+        }
+        else{
+            cout << "------------------" << endl;
+            cout << "------------------" << endl;
+            cout << "Weapons : " << endl;
+            Weapon W;
+            int i;
+            for (i = 0; i <= weapons.size(); ++i){
+                weapons.read(i, W);
+                cout << W << endl;
+            }
+            cout << "------------------" << endl;
+            cout << "------------------" << endl;
+            cout << endl;
+            cout << endl;
+        }
+    }
+    void writeShopConsumables(){
+        if(consumables.size() == 0){
+            cout << "No Consumables!" << endl;
+        }
+        else{
+            cout << "------------------" << endl;
+            cout << "------------------" << endl;
+            cout << "Consumables : " << endl;
+            Consumables C;
+            int i;
+            for (i = 0; i <= consumables.size(); ++i){
+                consumables.read(i, C);
+                cout << C << endl;
+            }
+            cout << "------------------" << endl;
+            cout << "------------------" << endl;
+            cout << endl;
+            cout << endl;
+        }
+    }
+    friend ostream& operator << (ostream&out, Shop &S){
+        S.writeShopWeapons();
+        S.writeShopConsumables();
+        S.writeShopInteractions();
+        return out;
+    }
 };
 
 #endif // SHOP_HPP_INCLUDED

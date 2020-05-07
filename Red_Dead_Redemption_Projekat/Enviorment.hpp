@@ -30,6 +30,24 @@ public:
     void setEnviormentAnimals(const List <Animal> A){
         animals = A;
     }
+    void writeEnviormentAnimals(){
+        if(animals.size() == 0){
+            cout << "No animals in this enviorment!" << endl;
+        }
+        else{
+            Animal A;
+            int i;
+            for(i = 1; i <= animals.size(); ++i){
+                animals.read(i, A);
+                cout << A << endl;
+            }
+        }
+    }
+    friend ostream& operator << (ostream&out, Enviorment &E){
+        E.writeEnviormentAnimals();
+        out << "Enviorment temperature : " << E.getTemperature() << endl;
+        return out;
+    }
 };
 
 #endif // ENVIORMENT_HPP_INCLUDED

@@ -36,6 +36,21 @@ public:
         stamina = 0;
         ~Animal();
     }
+    friend ostream& operator << (ostream&out, Animal &A){
+        if(A.getAggresive()){
+        out << "Aggresive : YES" << endl;
+        }
+        else{
+        out << "Aggresive : NO" <<  endl;
+        }
+        if(A.getLegendary()){
+        out << "Legendary : YES" << endl;
+        }
+        else{
+        out << "Legendary : NO" << endl;
+        }
+        return out;
+    }
 
 };
 

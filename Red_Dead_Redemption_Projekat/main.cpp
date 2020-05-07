@@ -32,12 +32,7 @@ using namespace std;
 
 int main()
 {
-    Player p;
-    cout << p;
-    Action A("Upucao si Mrdju u nogu", -30);
-    p.addAction(A);
-    p.writeActions();
-
-
+    Game G;
+    cout << G << endl;
     return 0;
 }

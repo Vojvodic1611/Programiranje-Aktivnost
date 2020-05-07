@@ -20,6 +20,11 @@ public:
         return dialogue;
     }
 
+    friend ostream& operator << (ostream&out, Dialogue &D){
+        out << "Dialogue : " << D.getDialogue() << endl;
+        return out;
+    }
+
 };
 
 #endif // DIALOGUE_HPP_INCLUDED

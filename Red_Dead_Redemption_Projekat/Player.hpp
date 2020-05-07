@@ -84,14 +84,58 @@ public:
     }
 
     friend ostream& operator <<(ostream&out, Player& p){
+        out << "PLAYER : " << endl;
+        out << "-----------" << endl;
         out << "Player Level = "<< p.getPlayerLVL()<< endl;
         out << "Player is smelly = ";
         if(p.getPlayerSmelly()){
             out << "Yes he is!" << endl;
         }
         out << "No he is not!" << endl;
+        p.writeActions();
+        p.writeCharacterWeapons();
+        p.writeCharacterDialogue();
+        p.writeCharacterOutfit();
+        out << "-----------" << endl;
+        out << "-----------" << endl;
+        out <<endl;
         return out;
     }
+
+    friend bool operator==(Player &P1, Player &P2){
+        if(P1.getPlayerLVL() != P2.getPlayerLVL() ||  P1.getPlayerSmelly() != P2.getPlayerSmelly()){
+            return false;
+        }
+        else {
+            return true;
+        }
+    }
+
+    friend bool operator<(Player &P1, Player &P2){
+        if(P1.getPlayerLVL() < P2.getPlayerLVL()){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
+    friend bool operator>(Player &P1, Player &P2){
+        if(P1.getPlayerLVL() > P2.getPlayerLVL()){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
+    friend bool operator!=(Player &P1, Player &P2){
+        if(P1.getPlayerLVL() != P2.getPlayerLVL() ||  P1.getPlayerSmelly() != P2.getPlayerSmelly()){
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+
 
 };
 

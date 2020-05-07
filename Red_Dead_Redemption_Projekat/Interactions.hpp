@@ -30,6 +30,14 @@ public:
     void setInteractionType(const InteractionType I){
         type = I;
     }
+    DinString getInteractionDialogue()const{
+        return Possible_Dialogue.getDialogue();
+    }
+    friend ostream& operator << (ostream&out, Interactions &I){
+        out << "Interaction type : " << I.getInteractionType() << endl;
+        out << "Interaction dialogue : " << I.getInteractionDialogue() << endl;
+        return out;
+    }
 };
 
 #endif // INTERACTIONS_HPP_INCLUDED

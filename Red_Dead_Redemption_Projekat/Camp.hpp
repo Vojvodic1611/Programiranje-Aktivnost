@@ -32,6 +32,24 @@ public:
     void setCampTents(const List <Tent> T){
         tents = T;
     }
+    void writeCampTents(){
+        if(tents.size() == 0){
+            cout << "There are no tents in the camp!" << endl;
+        }
+        else{
+            Tent T;
+            int i;
+            for(i = 1; i <= tents.size(); ++i){
+                tents.read(1, T);
+                cout << T << endl;
+            }
+        }
+    }
+    friend ostream& operator << (ostream&out, Camp &C){
+        out << "Camp location name : " << C.getCampLocationName() << endl;
+        C.writeCampTents();
+        return out;
+    }
 };
 
 #endif // CAMP_HPP_INCLUDED

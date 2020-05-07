@@ -48,6 +48,69 @@ public:
     void setCharacterOutfit(const List <Outfit> O){
         clothes = O;
     }
+
+    void writeCharacterWeapons(){
+        if(weapons.size() == 0){
+            cout << "No weapons!" << endl;
+        }
+        else{
+            cout << "------------------" << endl;
+            cout << "------------------" << endl;
+            cout << "Weapons : " << endl;
+            Weapon W;
+            int i;
+            for (i = 0; i <= weapons.size(); ++i){
+                weapons.read(i, W);
+                cout << W << endl;
+            }
+            cout << "------------------" << endl;
+            cout << "------------------" << endl;
+            cout << endl;
+            cout << endl;
+        }
+    }
+    void writeCharacterDialogue(){
+        if(dialogue.size() == 0){
+            cout << "No Dialogues!" << endl;
+        }
+        else{
+            cout << "------------------" << endl;
+            cout << "------------------" << endl;
+            cout << "Dialogue : " << endl;
+            Dialogue D;
+            int i;
+            for (i = 0; i <= dialogue.size(); ++i){
+                dialogue.read(i, D);
+                cout << D << endl;
+            }
+            cout << "------------------" << endl;
+            cout << "------------------" << endl;
+            cout << endl;
+            cout << endl;
+        }
+    }
+
+    void writeCharacterOutfit(){
+        if(clothes.size() == 0){
+            cout << "No Clothes!" << endl;
+        }
+        else{
+            cout << "------------------" << endl;
+            cout << "------------------" << endl;
+            cout << "Clothes : " << endl;
+            Outfit C;
+            int i;
+            for (i = 0; i <= dialogue.size(); ++i){
+                clothes.read(i, C);
+                cout << C << endl;
+            }
+            cout << "------------------" << endl;
+            cout << "------------------" << endl;
+            cout << endl;
+            cout << endl;
+        }
+    }
+
 };
 
 #endif // CHARACTER_HPP_INCLUDED

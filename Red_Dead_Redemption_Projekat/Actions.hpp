@@ -33,6 +33,14 @@ public:
         out << "Action reputation points : " << A.getRepPoints() << endl;
         return out;
     }
+    friend bool operator==(Action A1, Action A2){
+        if (A1.getDesc() != A2.getDesc() || A1.getRepPoints() != A2.getRepPoints()){
+            return false;
+        }
+        else {
+            return true;
+        }
+    }
 };
 
 #endif // ACTIONS_HPP_INCLUDED
